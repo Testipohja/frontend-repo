@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: chartreuse;
+}
+
+body{
+    font-family: "Sora", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: white;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background: black;
+}
+
+.navbar .container .main-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    
+}
+
+.navbar .container .main-menu > div{
+    margin: 10px;
+    font-size: 48px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover{
+    color: darkgreen;
+}
+
+
+
+.shop-container{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.shop-container > div{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    max-width: auto;
+    max-height: auto;
+}
+
+.shop-container > div:hover{
+    opacity: 0.3;
+}
+.shop-title{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.footer-container{
+    background: chartreuse;
+    text-align: center;
+}
+
+.mobile-menu{
+    background: chartreuse;
+    display: none;
+    width: 1000px;
+}
+
+.mobile-menu a{
+    color: black;
+}
+
+.mobile-menu a:hover{
+    color: darkgreen;
+}
+
+.shirt-container{
+    display: flex;
+    align-items: center;
+}
+
+.shirt{
+    opacity: 50%;
+    width: 700px;
+    margin-right: 150px;
+}
+
+.shirt-title{
+    font-size: 40px;
+}
+
+.shirt-desc{
+    font-size: 20px;
+}
+.shirt-price{
+    font-size: 20px;
+    color: grey;
+}
+
+
+
+@media (max-width: 960px){
+    .navbar .container .main-menu > div{
+        font-size: 24px;
+    }
+    .shirt{
+        width: 400px;
+    }
+}
+
+@media (max-width: 670px){
+
+    .shop-container{
+        grid-template-columns: auto auto;
+    }
+
+    .navbar .container .main-menu{
+        display: none;
+        
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .shirt{
+        width: 100px;
+    }
+
+}
